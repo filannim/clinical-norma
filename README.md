@@ -1,6 +1,6 @@
 #Clinical NorMA
 
-Clinical temporal expression normaliser.
+Clinical temporal expression normaliser. **Soon available**...
 
 ##How to use it
 
