@@ -6,7 +6,7 @@ Clinical temporal expression normaliser. **Soon available**...
 
 ##License
 
-(GLP v2)
+(GPL v2)
 
 Copyright (c) 2012 Michele Filannino, <http://www.cs.man.ac.uk/~filannim/>.
 
