@@ -10,7 +10,7 @@
 #	email:  filannim@cs.man.ac.uk
 #	
 #	This work is part of 2012 i2b2 challenge.	
-#	For details, see www.cs.man.ac.uk/~filannim/from __future__ import division
+#	For details, see www.cs.man.ac.uk/~filannim/
 
 """TempExp normaliser is a piece of software that provide the TimeML type and
    value attributes for each temporal expression given in input.
