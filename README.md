@@ -1,8 +1,11 @@
 #Clinical NorMA
 
-Clinical temporal expression normaliser. **Soon available**...
+Clinical temporal expression normaliser.
 
 ##How to use it
+>> python clinical_norMA.py 'approximately on June' 20130212
+
+The first parameter is the temporal expression and the second one is the utterance date expressed in the format YYYYMMDD. It needs both to work.
 
 ##License
 
