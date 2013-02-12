@@ -28,16 +28,16 @@
    "utterance time" as parameters. 
 
    To see the sample output, run: 
-   >> python clinical_norMA.py 
+   >> python clinical_norMA.py 'approximately on June' 20130212
 
    Output format: 
-	the fuction outputs a tuple, e.g. 
-	('about last friday', 'DATE', '2010-01-22', 'DOW', 'APPROX')
-	the first entry is the temporal expression as it is processed, next entry is 
-	TYPE (DATE, TIME, FREQUENCY, DURATION) according to i2b2 temporal annotation
-	scheme (2012), the next entry is normalised VALUE according to ISO-8601, the
-	next one is used for debugging and show the name of the fired rule and the
-	last one refers to the MOD attribute (START, END, APPROX).
+   the fuction outputs a tuple, e.g. 
+   ('approximately on june', 'DATE', '2013-06', 'Month', 'APPROX')
+   the first entry is the temporal expression as it is processed, next entry is 
+   TYPE (DATE, TIME, FREQUENCY, DURATION) according to i2b2 temporal annotation
+   scheme (2012), the next entry is normalised VALUE according to ISO-8601, the
+   next one is used for debugging and show the name of the fired rule and the
+   last one refers to the MOD attribute (START, END, APPROX).
 
 Developed by:
 	Michele Filannino (filannim AT cs.manchester.ac.uk)
@@ -2543,10 +2543,9 @@ def check_mod(timex):
 		return timex[0], timex[1], timex[2], timex[3], mod
 
 def main():
-	#raw_word1 = sys.argv[1]
-	#raw_word2 = sys.argv[2]
-	#print normalise(raw_word1, raw_word2)
-	print normalise('10/12/2004 at 10:17 pm')
+	timex = sys.argv[1]
+	utterance = sys.argv[2]
+	print normalise(timex, utterance)
 	
 def normalise(raw_word, raw_date=None, bufferised=False):
 	if raw_date == "ERROR":
