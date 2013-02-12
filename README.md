@@ -3,9 +3,13 @@
 Clinical temporal expression normaliser.
 
 ##How to use it
->> python clinical_norMA.py 'approximately on June' 20130212
+
+    $ python clinical_norMA.py 'approximately on June' 20130212
+    ('approximately on june', 'DATE', '2013-06', 'Month', 'APPROX')
+    $
 
 The first parameter is the temporal expression and the second one is the utterance date expressed in the format YYYYMMDD. It needs both to work.
+The output is a set of 5 elements: 1) temporal expression post-processed 2) type 3) value 4) name of the fired rule 5) modifier.
 
 ##License
 
