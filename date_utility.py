@@ -1,3 +1,18 @@
+#!/usr/bin/python
+#
+#	Copyright 2012 Michele Filannino
+#	
+#	gnTEAM, School of Computer Science, University of Manchester.
+#	All rights reserved. This program and the accompanying materials
+#	are made available under the terms of the GNU General Public License.
+#	
+#	authors: Michele Filannino
+#	email:  filannim@cs.man.ac.uk
+#	
+#	This work is part of 2012 i2b2 challenge.	
+#	For details, see www.cs.man.ac.uk/~filannim/
+
+
 class date_utility:
   @staticmethod
 	def get_num_from_literal(literal):
