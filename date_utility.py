@@ -48,7 +48,7 @@ class date_utility:
 				i += len(numeral)
 		return result
 		
-	numbers = {'zero':0,
+numbers = {'zero':0,
 		   'one':1,
 		   'two':2,
 		   'three':3,
@@ -99,7 +99,7 @@ class date_utility:
 		   'ninety':90,
 		   '(?:one-? ?)?hundred':100,}
 
-	ordinals = {'first':1,
+ordinals = {'first':1,
 		   'second':2,
 		   'third':3,
 		   'fourth':4,
@@ -130,5 +130,5 @@ class date_utility:
 		   'fiftyth':50,
 		   'sixtyth':60}
 
-	numeral_map = zip((1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1),
+numeral_map = zip((1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1),
 	('M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'))
