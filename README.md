@@ -17,7 +17,8 @@ crucial role in the normalisation of deictic temporal expressions
     $ python clinical_norma.py 'approximately on June' 20150212
     ('approximately on june', 'DATE', '2015-06', 'Month', 'APPROX')
 
-You may alternatively want to provide a clinical document and a temporal expression.
+You may alternatively want to provide a clinical document and a temporal expression
+(format YYYYMMDD).
 In this case, the document is analysed and the pivotal clinical dates are extracted
 (date of admission, discharge, operation, transfer) to then be used by the normaliser
 as utterance time points.
@@ -26,7 +27,6 @@ as utterance time points.
     ('postoperative day #4', 'DATE', '2012-01-20', 'postoperative_num1', 'NA')
     $
 
-The first parameter is the temporal expression and the second one is the utterance date expressed in the format YYYYMMDD. It needs both to work.
 The output is a set of 5 elements: 1) temporal expression post-processed 2) type 3) value 4) name of the fired rule 5) modifier.
 
 ##License
