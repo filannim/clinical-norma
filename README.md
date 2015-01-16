@@ -4,8 +4,26 @@ Clinical temporal expression normaliser.
 
 ##How to use it
 
-    $ python clinical_norMA.py 'approximately on June' 20130212
+The normaliser can be used in two different settings.
+
+We provide a temporal expression and an utterance time point. The normalisation
+is carried out with respect to such date. The utterance time point plays a
+crucial role in the normalisation of deictic temporal expressions
+('today', 'a month ago', 'in two months').
+
+    $ python clinical_norma.py 'approximately on June' 20130212
     ('approximately on june', 'DATE', '2013-06', 'Month', 'APPROX')
+    
+    $ python clinical_norma.py 'approximately on June' 20150212
+    ('approximately on june', 'DATE', '2015-06', 'Month', 'APPROX')
+
+You may alternatively want to provide a clinical document and a temporal expression.
+In this case, the document is analysed and the pivotal clinical dates are extracted
+(date of admission, discharge, operation, transfer) to then be used by the normaliser
+as utterance time points.
+
+    $ python normaliser.py [file_to_analyse] 'postoperative day #4'
+    ('postoperative day #4', 'DATE', '2012-01-20', 'postoperative_num1', 'NA')
     $
 
 The first parameter is the temporal expression and the second one is the utterance date expressed in the format YYYYMMDD. It needs both to work.
