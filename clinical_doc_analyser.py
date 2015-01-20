@@ -21,6 +21,7 @@ from __future__ import division
 import codecs
 from datetime import date as datex
 import re
+import sys
 from os import listdir
 
 from clinical_norma import normalise
@@ -145,7 +146,7 @@ class ClinicalDocument(object):
 
 
 def main():
-    path = './test_data/xml/'
+    path = sys.argv[1]
     analyser = DocumentAnalyser()
     for filename in listdir(path):
         if filename[-4:] == ".xml":
